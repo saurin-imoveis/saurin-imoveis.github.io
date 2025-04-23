@@ -93,13 +93,12 @@
   <section id="landing" class="container">
     <h2 class="section-title">Landing Page - Captação de Leads</h2>
     <p>Cadastre-se para receber informações exclusivas sobre os melhores terrenos em condomínio.</p>
-    <form onsubmit="alert('Obrigado! Em breve entraremos em contato.'); return false;">
-      <input type="text" placeholder="Seu nome" required />
-      <input type="email" placeholder="Seu e-mail" required />
-      <input type="tel" placeholder="Seu WhatsApp" required />
+    <form action="https://formspree.io/f/xgvkeldw" method="POST">
+      <input type="text" name="nome" placeholder="Seu nome" required />
+      <input type="email" name="email" placeholder="Seu e-mail" required />
+      <input type="tel" name="telefone" placeholder="Seu WhatsApp" required />
       <button class="cta-button" type="submit">Quero Receber</button>
-   <form action="https://formspree.io/f/{mzzrbaan}" method="POST">
-
+    </form>
   </section>
 
   <footer>
