@@ -7,17 +7,12 @@
   <title>Mauricio Saurin - Negócios Imobiliários</title>
   <style>
     body { margin: 0; font-family: Arial, sans-serif; color: #333; background: #f9f9f9; }
-    header { background: #2d2d2d; padding: 10px 20px; color: white; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; }
-    header img { height: 60px; }
-    nav { display: flex; flex-wrap: wrap; }
-    nav a { color: white; margin: 10px; text-decoration: none; font-weight: bold; }
     .container { padding: 40px 20px; max-width: 1200px; margin: auto; }
     .hero { text-align: center; padding: 60px 20px; background: #e4e4e4; }
     .hero h1 { font-size: 2.5rem; color: #2d2d2d; }
     .section-title { font-size: 1.8rem; margin-bottom: 20px; border-left: 5px solid #c49950; padding-left: 10px; }
     footer { background: #2d2d2d; color: white; text-align: center; padding: 20px; margin-top: 40px; }
     .cta-button { display: inline-block; margin-top: 20px; background: #c49950; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; }
-    .contact-info { line-height: 1.8; }
     .property-card { background: #fff; border: 1px solid #ddd; padding: 20px; margin-bottom: 20px; border-radius: 8px; }
     form input, form button { width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ccc; font-size: 16px; }
     #whatsapp-button {
@@ -37,82 +32,33 @@
       z-index: 1000;
     }
     @media (max-width: 768px) {
-      nav { flex-direction: column; align-items: center; }
-      .hero h1 { font-size: 1.8rem; }
+      .header-top { flex-direction: column; text-align: center; }
+      nav a { display: block; margin: 10px 0; }
     }
   </style>
 </head>
 <body>
 
-  <a id="whatsapp-button" href="https://wa.me/5519988174538" target="_blank">📱</a>
+<a id="whatsapp-button" href="https://wa.me/5519988174538" target="_blank">📱</a>
 
-  <header style="background: #2d2d2d; display: flex; align-items: center; justify-content: flex-start; padding: 0;">
-    <img src="logo-saurin-grande.png" alt="Logo Saurin" style="height: 100%; max-height: 120px; margin-left: 20px;">
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#imoveis">Imóveis</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#contato">Contato</a>
-      <a href="#landing">Quero um Terreno</a>
-    </nav>
-  </header>
-
-  <section id="home" class="hero">
-    <h1>Confiança e Excelência em Negócios Imobiliários</h1>
-    <p>Apresentamos os melhores terrenos e imóveis em Sumaré e região.</p>
-    <a class="cta-button" href="#landing">Encontre seu terreno ideal</a>
-  </section>
-
-  <section id="imoveis" class="container">
-    <h2 class="section-title">Imóveis Disponíveis</h2>
-
-    <div class="property-card">
-      <h3>Jardim Residencial dos Girassóis – Sumaré-SP</h3>
-      <p>Terrenos em condomínio fechado com 750 m² (15x50m). Apenas 75 lotes com segurança 24h, 3 praças, academia ao ar livre, playground e ampla área verde.</p>
-      <p>Infraestrutura em fase final: rede elétrica pronta, drenagem finalizada e obras de água e esgoto em andamento.</p>
-      <p><strong>Valor:</strong> R$ 580.000,00</p>
-      <a class="cta-button" href="#contato">Agende sua visita</a>
+<header style="background: #2d2d2d; padding: 20px;">
+  <div class="header-top" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+    <img src="logo-saurin.png" alt="Logo Saurin" style="height: 100px; max-width: 45%;">
+    <div style="color: white; text-align: right; max-width: 50%;">
+      <h1 style="margin: 0; font-size: 1.8rem;">MAURICIO SAURIN</h1>
+      <p style="margin: 5px 0 0;">CRECI 209673-F</p>
     </div>
-
-    <div class="property-card">
-      <h3>Residencial Luiza – Paulínia-SP</h3>
-      <p><strong>Últimas unidades!</strong></p>
-      <img src="residencial-luiza.jpeg" alt="Mapa do Residencial Luiza" style="width:100%; border-radius: 8px; margin: 15px 0;">
-      <p>Lotes de <strong>300 a 420 m²</strong> em condomínio fechado com infraestrutura completa, localizado em Paulínia-SP.</p>
-      <p>Valor: <strong>R$ 2.000,00</strong> o metro quadrado</p>
-      <a class="cta-button" href="https://wa.me/5519988174538?text=Olá!%20Tenho%20interesse%20no%20Residencial%20Luiza%20em%20Paulínia.%20Pode%20me%20enviar%20mais%20informações?" target="_blank">Fale pelo WhatsApp</a>
-    </div>
-  </section>
-
-  <section id="sobre" class="container">
-    <h2 class="section-title">Sobre Mauricio Saurin</h2>
-    <p>Corretor autônomo com experiência no mercado de terrenos e imóveis de alto padrão. Atua com transparência e comprometimento em Sumaré e região.</p>
-    <p>CRECI SP 209673-F</p>
-    <p>Endereço: Av. São Paulo, 453 - Nova Veneza, Sumaré-SP</p>
-  </section>
-
-  <section id="contato" class="container">
-    <h2 class="section-title">Fale Comigo</h2>
-    <div class="contact-info">
-      <p>📞 <a href="https://wa.me/5519988174538" target="_blank">(19) 98817-4538</a></p>
-      <p>📞 <a href="https://wa.me/5519996516685" target="_blank">(19) 99651-6685</a></p>
-      <p>📸 <a href="https://instagram.com" target="_blank">Instagram</a></p>
-    </div>
-  </section>
-
-  <section id="landing" class="container">
-    <h2 class="section-title">Landing Page - Captação de Leads</h2>
-    <p>Cadastre-se para receber informações exclusivas sobre os melhores terrenos em condomínio.</p>
-    <form action="https://formspree.io/f/xpwdzjgv" method="POST">
-      <input type="text" name="nome" placeholder="Seu nome" required />
-      <input type="email" name="email" placeholder="Seu e-mail" required />
-      <input type="tel" name="telefone" placeholder="Seu WhatsApp" required />
-      <button class="cta-button" type="submit">Quero Receber</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>&copy; 2024 Mauricio Saurin - Negócios Imobiliários | CRECI SP 209673-F</p>
-  </footer>
-</body>
-</html>
+  </div>
+  <nav style="text-align: center; margin-top: 20px;">
+    <a href="#home" style="color: white; margin: 0 15px; text-decoration: none; font-weight: bold;">Home</a>
+    <a href="#imoveis" style="color: white; margin: 0 15px; text-decoration: none; font-weight: bold;">Imóveis</a>
+    <a href="#sobre" style="color: white; margin: 0 15px; text-decoration: none; font-weight: bold;">Sobre</a>
+    <a href="#contato" style="color: white; margin: 0 15px; text-decoration: none; font-weight: bold;">Contato</a>
+    <a href="#landing" style="color: white; margin: 0 15px; text-decoration: none; font-weight: bold;">Quero um Terreno</a>
+  </nav>
+</header>
+<section id="home" class="hero">
+  <h1>Confiança e Excelência em Negócios Imobiliários</h1>
+  <p>Apresentamos os melhores terrenos e imóveis em Sumaré e região.</p>
+  <a class="cta-button" href="#landing">Encontre seu terreno ideal</a>
+</section>
