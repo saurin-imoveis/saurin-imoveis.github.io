@@ -6,57 +6,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mauricio Saurin - Negócios Imobiliários</title>
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; color: #333; background: #f9f9f9; }
-    .container { padding: 40px 20px; max-width: 1200px; margin: auto; }
-    .hero { text-align: center; padding: 60px 20px; background: #e4e4e4; }
-    .hero h1 { font-size: 2.5rem; color: #2d2d2d; }
-    .section-title { font-size: 1.8rem; margin-bottom: 20px; border-left: 5px solid #c49950; padding-left: 10px; }
-    footer { background: #2d2d2d; color: white; text-align: center; padding: 20px; margin-top: 40px; }
-    .cta-button { display: inline-block; margin-top: 20px; background: #c49950; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; }
-    .property-card { background: #fff; border: 1px solid #ddd; padding: 20px; margin-bottom: 20px; border-radius: 8px; }
-    form input, form button { width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ccc; font-size: 16px; }
-    #whatsapp-button {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25d366;
-      color: white;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      font-size: 30px;
-      text-align: center;
-      line-height: 60px;
-      text-decoration: none;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-      z-index: 1000;
+    body { margin: 0; font-family: Arial, sans-serif; background: #f9f9f9; color: #333; }
+    header {
+      background: #2d2d2d;
+      padding: 0;
     }
-    @media (max-width: 768px) {
-      .header-top { flex-direction: column; text-align: center; }
-      nav a { display: block; margin: 10px 0; }
+    .top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      height: 120px;
+    }
+    .top-bar img {
+      height: 100%;
+    }
+    .top-bar .creci-info {
+      color: white;
+      text-align: right;
+      line-height: 1.4;
+    }
+    nav {
+      background: #2d2d2d;
+      text-align: center;
+      padding: 15px 0;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: #e4e4e4;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      color: #2d2d2d;
+    }
+    .cta-button {
+      display: inline-block;
+      margin-top: 20px;
+      background: #c49950;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
 
-<a id="whatsapp-button" href="https://wa.me/5519988174538" target="_blank">📱</a>
-
-<header style="background: #2d2d2d; padding: 20px;">
-  <div class="header-top" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
-    <img src="logo-saurin.png" alt="Logo Saurin" style="height: 100px; max-width: 45%;">
-    <div style="color: white; text-align: right; max-width: 50%;">
-      <h1 style="margin: 0; font-size: 1.8rem;">MAURICIO SAURIN</h1>
-      <p style="margin: 5px 0 0;">CRECI 209673-F</p>
+<header>
+  <div class="top-bar">
+    <img src="logo-saurin-completo.png" alt="Logo Saurin">
+    <div class="creci-info">
+      <h2 style="margin: 0;">MAURICIO SAURIN</h2>
+      <p style="margin: 0;">CRECI 209673-F</p>
     </div>
   </div>
-  <nav style="text-align: center; margin-top: 20px;">
-    <a href="#home" style="color: white; margin: 0 15px; text-decoration: none; font-weight: bold;">Home</a>
-    <a href="#imoveis" style="color: white; margin: 0 15px; text-decoration: none; font-weight: bold;">Imóveis</a>
-    <a href="#sobre" style="color: white; margin: 0 15px; text-decoration: none; font-weight: bold;">Sobre</a>
-    <a href="#contato" style="color: white; margin: 0 15px; text-decoration: none; font-weight: bold;">Contato</a>
-    <a href="#landing" style="color: white; margin: 0 15px; text-decoration: none; font-weight: bold;">Quero um Terreno</a>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#imoveis">Imóveis</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+    <a href="#landing">Quero um Terreno</a>
   </nav>
 </header>
+
 <section id="home" class="hero">
   <h1>Confiança e Excelência em Negócios Imobiliários</h1>
   <p>Apresentamos os melhores terrenos e imóveis em Sumaré e região.</p>
