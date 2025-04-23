@@ -7,10 +7,7 @@
   <title>Mauricio Saurin - Negócios Imobiliários</title>
   <style>
     body { margin: 0; font-family: Arial, sans-serif; background: #f9f9f9; color: #333; }
-    header {
-      background: #2d2d2d;
-      padding: 0;
-    }
+    header { background: #2d2d2d; padding: 0; }
     .top-bar {
       display: flex;
       align-items: center;
@@ -46,6 +43,24 @@
       font-size: 2.5rem;
       color: #2d2d2d;
     }
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section-title {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      border-left: 5px solid #c49950;
+      padding-left: 10px;
+    }
+    .property-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
     .cta-button {
       display: inline-block;
       margin-top: 20px;
@@ -55,6 +70,14 @@
       text-decoration: none;
       border-radius: 5px;
       font-weight: bold;
+    }
+    form input, form button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
     }
   </style>
 </head>
@@ -88,7 +111,6 @@
   <div class="property-card">
     <h3>Jardim Residencial dos Girassóis – Sumaré-SP</h3>
     <p>Terrenos em condomínio fechado com 750 m² (15x50m). Apenas 75 lotes com segurança 24h, 3 praças, academia ao ar livre, playground e ampla área verde.</p>
-    <p>Infraestrutura em fase final: rede elétrica pronta, drenagem finalizada e obras de água e esgoto em andamento.</p>
     <p><strong>Valor:</strong> R$ 580.000,00</p>
     <a class="cta-button" href="#contato">Agende sua visita</a>
   </div>
@@ -118,7 +140,7 @@
 </section>
 
 <section id="landing" class="container">
-  <h2 class="section-title">Landing Page - Captação de Leads</h2>
+  <h2 class="section-title">Quero um Terreno</h2>
   <p>Cadastre-se para receber informações exclusivas sobre os melhores terrenos em condomínio.</p>
   <form action="https://formspree.io/f/xpwdzjgv" method="POST">
     <input type="text" name="nome" placeholder="Seu nome" required />
