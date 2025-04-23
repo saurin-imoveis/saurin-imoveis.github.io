@@ -7,8 +7,10 @@
   <title>Mauricio Saurin - Negócios Imobiliários</title>
   <style>
     body { margin: 0; font-family: Arial, sans-serif; color: #333; background: #f9f9f9; }
-    header { background: #2d2d2d; padding: 20px; color: white; display: flex; align-items: center; justify-content: space-between; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    header { background: #2d2d2d; padding: 10px 20px; color: white; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+    header img { height: 60px; }
+    nav { display: flex; flex-wrap: wrap; }
+    nav a { color: white; margin: 10px; text-decoration: none; font-weight: bold; }
     .container { padding: 40px 20px; max-width: 1200px; margin: auto; }
     .hero { text-align: center; padding: 60px 20px; background: #e4e4e4; }
     .hero h1 { font-size: 2.5rem; color: #2d2d2d; }
@@ -17,11 +19,35 @@
     .cta-button { display: inline-block; margin-top: 20px; background: #c49950; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; }
     .contact-info { line-height: 1.8; }
     .property-card { background: #fff; border: 1px solid #ddd; padding: 20px; margin-bottom: 20px; border-radius: 8px; }
+    form input, form button { width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ccc; font-size: 16px; }
+    #whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      font-size: 30px;
+      text-align: center;
+      line-height: 60px;
+      text-decoration: none;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+    @media (max-width: 768px) {
+      nav { flex-direction: column; align-items: center; }
+      .hero h1 { font-size: 1.8rem; }
+    }
   </style>
 </head>
 <body>
+
+  <a id="whatsapp-button" href="https://wa.me/5519988174538" target="_blank">📱</a>
+
   <header>
-    <h2 style="margin: 0;">Saurin Imóveis</h2>
+    <img src="logo-saurin.png" alt="Logo Saurin">
     <nav>
       <a href="#home">Home</a>
       <a href="#imoveis">Imóveis</a>
@@ -67,10 +93,10 @@
   <section id="landing" class="container">
     <h2 class="section-title">Landing Page - Captação de Leads</h2>
     <p>Cadastre-se para receber informações exclusivas sobre os melhores terrenos em condomínio.</p>
-    <form>
-      <input type="text" placeholder="Seu nome" required /><br><br>
-      <input type="email" placeholder="Seu e-mail" required /><br><br>
-      <input type="tel" placeholder="Seu WhatsApp" required /><br><br>
+    <form onsubmit="alert('Obrigado! Em breve entraremos em contato.'); return false;">
+      <input type="text" placeholder="Seu nome" required />
+      <input type="email" placeholder="Seu e-mail" required />
+      <input type="tel" placeholder="Seu WhatsApp" required />
       <button class="cta-button" type="submit">Quero Receber</button>
     </form>
   </section>
