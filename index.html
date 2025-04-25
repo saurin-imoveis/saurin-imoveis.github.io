@@ -1,160 +1,98 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mauricio Saurin - Negócios Imobiliários</title>
-  <link rel="icon" href="favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saurin Imóveis</title>
+  <link rel="icon" href="favicon.ico"/>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: Arial, sans-serif; line-height: 1.6; }
+    body { margin: 0; font-family: Arial, sans-serif; }
+    header { background: #333; color: white; display: flex; align-items: center; justify-content: space-between; padding: 10px 20px; }
+    header img { height: 60px; }
+    nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
 
-    header {
-      background-color: #333;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 15px 30px;
-    }
-    header img {
-      height: 80px;
-    }
-    .header-info {
-      text-align: right;
-    }
-    .header-info h1 {
-      font-size: 1.5rem;
-    }
+    section { padding: 50px 20px; }
+    .hero { background: #eee; text-align: center; padding: 80px 20px; }
+    .hero h1 { font-size: 2em; }
+    .cta-button { padding: 12px 20px; background: #c49950; color: white; font-weight: bold; border: none; text-decoration: none; display: inline-block; margin-top: 20px; border-radius: 6px; }
 
-    nav {
-      background: #333;
-      text-align: center;
-      padding: 10px 0;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-size: 1.1rem;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
+    .property-card { border: 1px solid #ddd; padding: 20px; margin: 20px auto; max-width: 600px; border-radius: 10px; box-shadow: 0 0 10px #ddd; }
+    .property-card img { width: 100%; border-radius: 8px; }
 
-    .hero {
-      background: #eee;
-      text-align: center;
-      padding: 60px 20px;
-    }
-    .hero h2 {
-      font-size: 2rem;
-      margin-bottom: 10px;
-    }
-    .hero p {
-      font-size: 1.1rem;
-      margin-bottom: 20px;
-    }
-    .cta-button {
-      background: #c49950;
-      color: white;
-      padding: 12px 24px;
-      border-radius: 5px;
-      font-weight: bold;
-      text-decoration: none;
-    }
+    footer { background: #333; color: white; text-align: center; padding: 30px 20px; font-size: 14px; }
+    footer a { color: #c49950; text-decoration: none; font-weight: bold; }
 
-    .container {
-      max-width: 960px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    .property-card {
-      border: 1px solid #ccc;
-      padding: 20px;
-      border-radius: 10px;
-      margin-bottom: 30px;
-    }
-    .property-card img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin: 15px 0;
-    }
-
-    footer {
-      background: #f4f4f4;
-      text-align: center;
-      padding: 30px 10px;
-      margin-top: 40px;
-      font-size: 0.9rem;
-    }
-
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25d366;
-      color: white;
-      padding: 14px 18px;
-      border-radius: 50%;
-      font-size: 24px;
-      text-decoration: none;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-      z-index: 999;
-    }
+    form input, form textarea { width: 100%; max-width: 500px; margin-bottom: 10px; padding: 10px; }
   </style>
 </head>
 <body>
-  <header>
-    <img src="logo-saurin-completo.png" alt="Logo Saurin Imóveis" />
-    <div class="header-info">
-      <h1>MAURICIO SAURIN</h1>
-      <p>CRECI 209673-F</p>
-    </div>
-  </header>
 
+<header>
+  <img src="logo-saurin-completo.png" alt="Logo Saurin" />
   <nav>
-    <a href="#inicio">Home</a>
+    <a href="#home">Home</a>
     <a href="#imoveis">Imóveis</a>
     <a href="#sobre">Sobre</a>
     <a href="#contato">Contato</a>
     <a href="#quero">Quero um Terreno</a>
   </nav>
+</header>
 
-  <section class="hero" id="inicio">
-    <h2>Confiança e Excelência em Negócios Imobiliários</h2>
-    <p>Apresentamos os melhores terrenos e imóveis em Sumaré e região.</p>
-    <a class="cta-button" href="#imoveis">Encontre seu terreno ideal</a>
-  </section>
+<section id="home" class="hero">
+  <h1>Confiança e Excelência em Negócios Imobiliários</h1>
+  <p>Apresentamos os melhores terrenos e imóveis em Sumaré e região.</p>
+  <a class="cta-button" href="#quero">Encontre seu terreno ideal</a>
+</section>
 
-  <section id="imoveis" class="container">
-    <h2 style="margin-bottom: 20px;">Imóveis Disponíveis</h2>
+<section id="imoveis">
+  <h2>Imóveis Disponíveis</h2>
 
-    <div class="property-card">
-      <h3>Jardim Residencial dos Girassóis – Sumaré-SP</h3>
-      <p><strong>Últimas unidades!</strong></p>
-      <p>Terreno de 750m² em condomínio fechado com portaria 24h, área verde, playground e academia ao ar livre.</p>
-      <p><strong>Valor:</strong> R$ 580.000,00</p>
-      <a class="cta-button" href="https://wa.me/5519988174538" target="_blank">Fale pelo WhatsApp</a>
-    </div>
+  <div class="property-card">
+    <h3>Jardim Residencial dos Girassóis – Sumaré-SP</h3>
+    <p><strong>Terreno em condomínio fechado com 750 m².</strong></p>
+    <p><strong>Valor:</strong> R$ 580.000,00</p>
+    <a class="cta-button" href="https://wa.me/5519988174538" target="_blank">Fale pelo WhatsApp</a>
+  </div>
 
-    <div class="property-card">
-      <h3>Residencial Luiza – Paulínia-SP</h3>
-      <p><strong>Últimas unidades!</strong></p>
-      <img src="residencial-luiza.jpeg" alt="Mapa do Residencial Luiza" />
-      <p>Lotes de 300 a 420 m² em condomínio fechado com infraestrutura completa.</p>
-      <p><strong>Valor:</strong> R$ 2.000,00/m²</p>
-      <a class="cta-button" href="https://wa.me/5519988174538" target="_blank">Fale pelo WhatsApp</a>
-    </div>
-  </section>
+  <div class="property-card">
+    <h3>Residencial Luiza – Paulínia-SP</h3>
+    <p><strong>Últimas unidades! Lotes de 300 a 420 m²</strong></p>
+    <img src="residencial-luiza.jpeg" alt="Mapa do Residencial Luiza" />
+    <p><strong>Valor:</strong> R$ 2.000,00 / m²</p>
+    <a class="cta-button" href="https://wa.me/5519988174538" target="_blank">Fale pelo WhatsApp</a>
+  </div>
+</section>
 
-  <footer>
-    © 2025 Maurício Saurin - Negócios Imobiliários<br />
-    Av. São Paulo, 453 - Nova Veneza - Sumaré-SP<br />
-    WhatsApp: (19) 98817-4538 / (19) 99651-6685
-  </footer>
+<section id="sobre">
+  <h2>Sobre</h2>
+  <p>Sou Maurício Saurin, corretor de imóveis (CRECI 209673-F), atuando com responsabilidade e dedicação no mercado imobiliário de Sumaré e região. Apresento os melhores terrenos e empreendimentos da região com transparência, profissionalismo e atendimento personalizado.</p>
+</section>
 
-  <a class="whatsapp-float" href="https://wa.me/5519988174538" target="_blank">📱</a>
+<section id="contato">
+  <h2>Contato</h2>
+  <p>📍 Av. São Paulo, 453 – Nova Veneza – Sumaré-SP</p>
+  <p>📞 (19) 98817-4538  |  (19) 99651-6685</p>
+  <p>📧 saurincorretor@gmail.com</p>
+  <a class="cta-button" href="https://wa.me/5519988174538" target="_blank">Chamar no WhatsApp</a>
+</section>
+
+<section id="quero">
+  <h2>Quero um Terreno</h2>
+  <p>Preencha o formulário abaixo para que possamos entrar em contato com as melhores opções disponíveis:</p>
+  <form action="https://formspree.io/f/xpwdzjgv" method="POST">
+    <input type="text" name="nome" placeholder="Seu nome" required><br>
+    <input type="email" name="email" placeholder="Seu e-mail" required><br>
+    <input type="tel" name="telefone" placeholder="Seu telefone" required><br>
+    <textarea name="mensagem" placeholder="Descreva o que você procura..." required></textarea><br>
+    <button class="cta-button" type="submit">Enviar</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 Maurício Saurin – CRECI 209673-F</p>
+  <p><a href="gerador.html" target="_blank">Acesso administrativo (Gerador de Imóveis)</a></p>
+</footer>
+
 </body>
 </html>
