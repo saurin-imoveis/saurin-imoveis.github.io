@@ -1,139 +1,47 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <link rel="icon" href="favicon.ico">
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mauricio Saurin - Negócios Imobiliários</title>
-  
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-83J0TFKPXY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-83J0TFKPXY');
-</script>
-
+  <link rel="icon" href="favicon.ico" />
   <style>
     html { scroll-behavior: smooth; }
-    body { margin: 0; font-family: Arial, sans-serif; background: #f9f9f9; color: #333; }
-    header { background: #2d2d2d; padding: 0; }
-    .top-bar {
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 0 20px; height: 120px;
-    }
-    .top-bar img { height: 100%; }
-    .top-bar .creci-info { color: white; text-align: right; line-height: 1.4; }
-    nav { background: #2d2d2d; text-align: center; padding: 15px 0; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-    .hero {
-      text-align: center; padding: 60px 20px; background: #e4e4e4;
-    }
-    .hero h1 { font-size: 2.5rem; color: #2d2d2d; }
-    .container { padding: 40px 20px; max-width: 1200px; margin: auto; }
-    .section-title {
-      font-size: 1.8rem; margin-bottom: 20px; border-left: 5px solid #c49950; padding-left: 10px;
-    }
-    .property-card {
-      background: #fff; border: 1px solid #ddd; padding: 20px;
-      margin-bottom: 20px; border-radius: 8px;
-    }
+    body { font-family: Arial, sans-serif; }
     .cta-button {
-      display: inline-block; margin-top: 20px;
-      background: #c49950; color: white; padding: 10px 20px;
-      text-decoration: none; border-radius: 5px; font-weight: bold;
-    }
-    form input, form button {
-      width: 100%; padding: 10px; margin-bottom: 10px;
-      border-radius: 5px; border: 1px solid #ccc; font-size: 16px;
+      display: inline-block;
+      margin-top: 20px;
+      background: #c49950;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-
-<header>
-  <div class="top-bar">
-    <img src="logo-saurin-completo.png" alt="Logo Saurin">
-    <div class="creci-info">
-      <h2 style="margin: 0;">MAURICIO SAURIN</h2>
-      <p style="margin: 0;">CRECI 209673-F</p>
+  <h1>Exemplo de Página Inicial</h1>
+  <section id="imoveis">
+    <div class="property-card">
+      <h3>Jardim Residencial dos Girassóis – Sumaré-SP</h3>
+      <p>Terreno em condomínio fechado com 750 m².</p>
+      <p><strong>Valor:</strong> R$ 580.000,00</p>
+      <a class="cta-button" href="https://wa.me/5519988174538" target="_blank">Fale pelo WhatsApp</a>
     </div>
-  </div>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#imoveis">Imóveis</a>
-    <a href="#sobre">Sobre</a>
-    <a href="#contato">Contato</a>
-    <a href="#landing">Quero um Terreno</a>
-  </nav>
-</header>
+  </section>
 
-<section id="home" class="hero">
-  <h1>Confiança e Excelência em Negócios Imobiliários</h1>
-  <p>Apresentamos os melhores terrenos e imóveis em Sumaré e região.</p>
-  <a class="cta-button" href="#landing">Encontre seu terreno ideal</a>
-</section>
-
-<section id="imoveis" class="container">
-  <h2 class="section-title">Imóveis Disponíveis</h2>
-  <div class="property-card">
-    <h3>Jardim Residencial dos Girassóis – Sumaré-SP</h3>
-    <p>Terrenos com 750 m² (15x50m) em condomínio fechado. Últimos lotes!</p>
-    <p><strong>Valor:</strong> R$ 580.000,00</p>
-    <a class="cta-button" href="#contato">Agende sua visita</a>
-  </div>
-  <div class="property-card">
-    <h3>Residencial Luiza – Paulínia-SP</h3>
-    <p><strong>Últimas unidades!</strong></p>
-    <img src="residencial-luiza.jpeg" alt="Mapa do Residencial Luiza" style="width:100%; border-radius: 8px; margin: 15px 0;">
-    <p>Lotes de 300 a 420 m². Valor: R$ 2.000,00 o metro.</p>
-    <a class="cta-button" href="https://wa.me/5519988174538" target="_blank">Fale pelo WhatsApp</a>
-  </div>
-</section>
-
-<section id="sobre" class="container">
-  <h2 class="section-title">Sobre Mauricio Saurin</h2>
-  <p>Corretor autônomo com experiência no mercado de terrenos e imóveis de alto padrão.</p>
-  <p>CRECI SP 209673-F</p>
-  <p>Endereço: Av. São Paulo, 453 - Nova Veneza, Sumaré-SP</p>
-</section>
-
-<section id="contato" class="container">
-  <h2 class="section-title">Fale Comigo</h2>
-  <p><a href="https://wa.me/5519988174538" target="_blank">📞 (19) 98817-4538</a></p>
-  <p><a href="https://wa.me/5519996516685" target="_blank">📞 (19) 99651-6685</a></p>
-  <p><a href="mailto:saurincorretor@gmail.com">📧 saurincorretor@gmail.com</a></p>
-</section>
-
-<section id="landing" class="container">
-  <h2 class="section-title">Quero um Terreno</h2>
-  <p>Cadastre-se para receber mais informações:</p>
-  <form action="https://formspree.io/f/xpwdzjgv" onsubmit="window.location.href='obrigado.html'; return false;" method="POST">
-    <input type="text" name="nome" placeholder="Seu nome" required />
-    <input type="email" name="email" placeholder="Seu e-mail" required />
-    <input type="tel" name="telefone" placeholder="Seu WhatsApp" required />
-    <button class="cta-button" type="submit">Quero Receber</button>
-  </form>
-</section>
-
-<footer style="background: #2d2d2d; color: white; text-align: center; padding: 20px;">
-  <p>&copy; 2024 Mauricio Saurin - Negócios Imobiliários | CRECI SP 209673-F</p>
-</footer>
-
-<a href="https://wa.me/5519988174538" target="_blank" style="
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25d366;
-  color: white;
-  padding: 12px 16px;
-  border-radius: 50%;
-  font-size: 24px;
-  text-decoration: none;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-  z-index: 1000;
-">📱</a>
+  <a href="https://wa.me/5519988174538" target="_blank" style="
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25d366;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 50%;
+    font-size: 24px;
+    text-decoration: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    z-index: 1000;
+  ">📱</a>
 </body>
 </html>
