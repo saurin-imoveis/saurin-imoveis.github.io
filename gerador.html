@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Gerador de Imóvel HTML</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px; }
+    input, textarea { width: 100%; margin-bottom: 10px; padding: 8px; }
+    label { font-weight: bold; }
+    .resultado { white-space: pre-wrap; background: #f4f4f4; padding: 15px; border: 1px solid #ccc; margin-top: 10px; }
+    button { padding: 10px 20px; background: #c49950; color: white; border: none; font-weight: bold; cursor: pointer; margin-top: 10px; }
+  </style>
+  <script>
+    var senha = prompt("Digite a senha para acessar:");
+    if (senha !== "admin311715") {
+      document.write("Acesso negado.");
+      document.body.innerHTML = "";
+    }
+  </script>
+</head>
+<body>
+  <h1>Gerador de Bloco HTML para Imóvel</h1>
+
+  <label>Nome do Empreendimento:</label>
+  <input type="text" id="nome">
+
+  <label>Cidade:</label>
+  <input type="text" id="cidade">
+
+  <label>Imagem (nome do arquivo):</label>
+  <input type="text" id="imagem" placeholder="ex: loteamento.jpg">
+
+  <label>Descrição:</label>
+  <textarea id="descricao"></textarea>
+
+  <label>Valor:</label>
+  <input type="text" id="valor">
+
+  <label>Link do WhatsApp:</label>
+  <input type="text" id="whatsapp" placeholder="https://wa.me/55...">
+
+  <button onclick="gerarHTML()">Gerar Código HTML</button>
+
+  <h2>Resultado:</h2>
+  <div class="resultado" id="resultado"></div>
+  <button onclick="copiarHTML()">Copiar Código</button>
+
+  <script>
+    function gerarHTML() {
+      const nome = document.getElementById('nome').value;
+      const cidade = document.getElementById('cidade').value;
+      const imagem = document.getElementById('imagem').value;
+      const descricao = document.getElementById('descricao').value;
+      const valor = document.getElementById('valor').value;
+      const whatsapp = document.getElementById('whatsapp').value;
+
+      const html = `
+<div class="property-card">
+  <h3>${nome} – ${cidade}</h3>
+  <p><strong>Últimas unidades!</strong></p>
+  <img src="${imagem}" alt="Imagem do Imóvel" style="width:100%; border-radius: 8px; margin: 15px 0;">
+  <p>${descricao}</p>
+  <p><strong>Valor:</strong> ${valor}</p>
+  <a class="cta-button" href="${whatsapp}" target="_blank">Fale pelo WhatsApp</a>
+</div>
+      `;
+      document.getElementById('resultado').innerText = html.trim();
+    }
+
+    function copiarHTML() {
+      const resultado = document.getElementById('resultado');
+      const range = document.createRange();
+      range.selectNode(resultado);
+      window.getSelection().removeAllRanges();
+      window.getSelection().addRange(range);
+      document.execCommand('copy');
+      alert('Código copiado com sucesso!');
+    }
+  </script>
+</body>
+</html>

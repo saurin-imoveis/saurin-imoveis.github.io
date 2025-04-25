@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mauricio Saurin - Negócios Imobiliários</title>
+  <link rel="icon" href="favicon.ico" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; }
+
+    header {
+      background-color: #333;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 30px;
+    }
+    header img {
+      height: 80px;
+    }
+    .header-info {
+      text-align: right;
+    }
+    .header-info h1 {
+      font-size: 1.5rem;
+    }
+
+    nav {
+      background: #333;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.1rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: #eee;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+    .cta-button {
+      background: #c49950;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 5px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .property-card {
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+    .property-card img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin: 15px 0;
+    }
+
+    footer {
+      background: #f4f4f4;
+      text-align: center;
+      padding: 30px 10px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: white;
+      padding: 14px 18px;
+      border-radius: 50%;
+      font-size: 24px;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo-saurin-completo.png" alt="Logo Saurin Imóveis" />
+    <div class="header-info">
+      <h1>MAURICIO SAURIN</h1>
+      <p>CRECI 209673-F</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#inicio">Home</a>
+    <a href="#imoveis">Imóveis</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+    <a href="#quero">Quero um Terreno</a>
+  </nav>
+
+  <section class="hero" id="inicio">
+    <h2>Confiança e Excelência em Negócios Imobiliários</h2>
+    <p>Apresentamos os melhores terrenos e imóveis em Sumaré e região.</p>
+    <a class="cta-button" href="#imoveis">Encontre seu terreno ideal</a>
+  </section>
+
+  <section id="imoveis" class="container">
+    <h2 style="margin-bottom: 20px;">Imóveis Disponíveis</h2>
+
+    <div class="property-card">
+      <h3>Jardim Residencial dos Girassóis – Sumaré-SP</h3>
+      <p><strong>Últimas unidades!</strong></p>
+      <p>Terreno de 750m² em condomínio fechado com portaria 24h, área verde, playground e academia ao ar livre.</p>
+      <p><strong>Valor:</strong> R$ 580.000,00</p>
+      <a class="cta-button" href="https://wa.me/5519988174538" target="_blank">Fale pelo WhatsApp</a>
+    </div>
+
+    <div class="property-card">
+      <h3>Residencial Luiza – Paulínia-SP</h3>
+      <p><strong>Últimas unidades!</strong></p>
+      <img src="residencial-luiza.jpeg" alt="Mapa do Residencial Luiza" />
+      <p>Lotes de 300 a 420 m² em condomínio fechado com infraestrutura completa.</p>
+      <p><strong>Valor:</strong> R$ 2.000,00/m²</p>
+      <a class="cta-button" href="https://wa.me/5519988174538" target="_blank">Fale pelo WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Maurício Saurin - Negócios Imobiliários<br />
+    Av. São Paulo, 453 - Nova Veneza - Sumaré-SP<br />
+    WhatsApp: (19) 98817-4538 / (19) 99651-6685
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/5519988174538" target="_blank">📱</a>
+</body>
+</html>
